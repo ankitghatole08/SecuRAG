@@ -48,23 +48,25 @@ Ollama (Llama3 Local LLM)
 
 ---
 
-# 📂 Project Structure
 securag-platform/
 │
 ├── backend/
-│ ├── app/
-│ │ ├── main.py
-│ │ ├── crud.py
-│ │ ├── models.py
-│ │ ├── schemas.py
-│ │ ├── database.py
-│ │ └── ai_engine.py
+│   ├── app/
+│   │   ├── main.py              # FastAPI entry point
+│   │   ├── crud.py             # Business logic + AI integration
+│   │   ├── models.py           # SQLAlchemy models
+│   │   ├── database.py         # DB connection
+│   │   ├── schemas.py          # Pydantic schemas
+│   │   ├── ai_engine.py        # Ollama AI integration
+│   │
+│   ├── requirements.txt
+│   └── .env (optional)
 │
 ├── streamlit_app/
-│ └── app.py
+│   ├── app.py                  # Streamlit UI dashboard
 │
-├── requirements.txt
-└── README.md
+├── README.md
+└── venv/
 
 
 ---
